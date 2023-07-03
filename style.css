@@ -1,0 +1,51 @@
+body {
+  background-color: rgba(255, 102, 0, 0.697);
+}
+
+input {
+  border-radius: 3px;
+  position: absolute;
+  background-color: rgba(242, 170, 123, 0.458);
+  outline: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 50%;
+}
+
+#options {
+  text-transform: capitalize;
+  padding: 10px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: baseline;
+  width: 300px;
+  background-color: rgba(245, 170, 123, 0.458);
+}
+
+#options:hover {
+  background-color: rgb(231, 113, 113);
+}
+
+.search-container input {
+  height: 35px;
+  width: 300px;
+  border: 1px solid;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 35px;
+  list-style-type: none;
+  font-size: 15px;
+}
+
+ul li:hover {
+  font-weight: bold;
+  /* font-weight: bold; */
+}
