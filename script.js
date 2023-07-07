@@ -13,7 +13,7 @@ input.addEventListener("keyup", search = () => {
 	while (suggestions.firstChild) suggestions.removeChild(suggestions.firstChild);
 	let inputVal = input.value.toLowerCase()
 	for (let i of fruit) {
-		if (i.toLowerCase().includes(inputVal.toLowerCase())) {
+		if (i.toLowerCase().includes(inputVal)) {
 			let suggestion = document.createElement("li")
 			suggestion.setAttribute("id", "options")
 
