@@ -12,7 +12,6 @@ document.addEventListener("keyup", search = (e) => {
 input.addEventListener("keyup", search = () => {
 	while (suggestions.firstChild) suggestions.removeChild(suggestions.firstChild);
 	let inputVal = input.value.toLowerCase()
-	let results = [];
 	for (let i of fruit) {
 		if (i.toLowerCase().includes(inputVal.toLowerCase()) && input.value !== '') {
 			let suggestion = document.createElement("li")
@@ -23,9 +22,7 @@ input.addEventListener("keyup", search = () => {
 			suggestions.appendChild(suggestion)
 			suggestion.addEventListener("click", function () {
 				input.value = suggestion.innerText
-				while (suggestions.firstChild) suggestions.removeChild(suggestions.firstChild);
 			})
 		}
 	}
-	return results;
 })
