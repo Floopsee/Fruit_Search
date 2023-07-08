@@ -22,6 +22,7 @@ input.addEventListener("keyup", search = () => {
 			suggestions.appendChild(suggestion)
 			suggestion.addEventListener("click", function () {
 				input.value = suggestion.innerText
+				while (suggestions.firstChild) suggestions.removeChild(suggestions.firstChild);
 			})
 		}
 	}
